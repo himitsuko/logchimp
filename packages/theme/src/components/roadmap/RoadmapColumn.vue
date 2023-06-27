@@ -56,7 +56,9 @@ async function getRoadmapPosts() {
 
 onMounted(() => {
   console.log('loaded')
-  getRoadmapPosts()
+  if (!(posts.value && posts.value.length > 0)) {
+    getRoadmapPosts()
+  }
 })
 </script>
 
