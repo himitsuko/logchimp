@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/:path((?!api/).*)",
+      "destination": "/"
+    },
+    {
       "source": "/api/:path*",
       "destination": "https://drapi.up.railway.app/api/:path*"
     }
