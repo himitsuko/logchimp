@@ -1,0 +1,9 @@
+name: logchimp
+env:
+  - key: NODE_ENV
+    value: production
+build:
+  - command: pnpm install
+  - command: pnpm run build
+release:
+  - command: pnpm run start
