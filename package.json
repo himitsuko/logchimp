@@ -13,6 +13,7 @@
 	"scripts": {
 		"server:dev": "pnpm --filter @logchimp/api dev",
 		"server:start": "pnpm --filter @logchimp/api start",
+		"start": "pnpm --filter @logchimp/api start",
 		"build:theme": "pnpm --filter @logchimp/theme build",
 		"rome:format": "rome format --write ."
 	},
