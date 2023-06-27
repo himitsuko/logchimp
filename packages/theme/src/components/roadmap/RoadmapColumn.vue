@@ -54,7 +54,10 @@ async function getRoadmapPosts() {
 	}
 }
 
-onMounted(() => getRoadmapPosts())
+onMounted(() => {
+  console.log('loaded')
+  getRoadmapPosts()
+})
 </script>
 
 <style lang='sass'>
