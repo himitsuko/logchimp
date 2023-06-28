@@ -6,7 +6,7 @@
     },
     {
       "source": "/api/:path*",
-      "destination": "https://roadmap-backend.vercel.app/api/:path*"
+      "destination": "https://drapi.up.railway.app/api/:path*"
     }
   ]
 }
