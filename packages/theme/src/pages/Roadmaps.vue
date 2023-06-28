@@ -49,11 +49,9 @@ async function getRoadmaps() {
     roadmaps.value = response.data.roadmaps;
 
     if (response.data.roadmaps.length) {
-			roadmaps.value.push(...response.data.roadmaps);
+			roadmaps.value.concat(...response.data.roadmaps);
 			page.value += 1;
 			state.value = "LOADED"
-		} else {
-			state.value = "COMPLETED";
 		}
   } catch (err) {
     console.error(err);

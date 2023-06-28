@@ -6,7 +6,7 @@ import App from "./App.vue";
 import { router } from "./router";
 
 import "./styles/main.sass";
-import axios from "axios";
+//import axios from "axios";
 
 //axios.defaults.baseURL = "https://drapi.up.railway.app/"
 
