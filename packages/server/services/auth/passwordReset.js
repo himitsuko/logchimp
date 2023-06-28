@@ -4,6 +4,8 @@ const database = require("../../database");
 // services
 const { mail, generateContent } = require("../../services/mail");
 const { createToken } = require("../../services/token.service");
+const logchimpConfig = require("../../utils/logchimpConfig");
+const config = logchimpConfig();
 
 // utils
 const logger = require("../../utils/logger");
@@ -42,6 +44,7 @@ const passwordReset = async (url, tokenPayload) => {
     });
 
     await mail.sendMail({
+      from: config.mail.from,
       to: tokenPayload.email,
       subject: `${siteTitle} - Reset your account password`,
       text: passwordResetMailContent.text,
