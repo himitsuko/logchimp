@@ -32,6 +32,7 @@ const config = () => {
   const mailUser = process.env.LOGCHIMP_MAIL_USER;
   const mailPassword = process.env.LOGCHIMP_MAIL_PASSWORD;
   const mailPort = process.env.LOGCHIMP_MAIL_PORT;
+  const mailFromAddress = process.env.LOGCHIMP_MAIL_FROM_ADDRESS;
 
   if (logchimpEnv === "1") {
     return {
@@ -56,6 +57,7 @@ const config = () => {
         user: mailUser,
         password: mailPassword,
         port: mailPort,
+        from: mailFromAddress,
       },
     };
   }
