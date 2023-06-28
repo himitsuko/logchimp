@@ -17,20 +17,7 @@ const logger = createLogger({
     // in beta
     new transports.Console({
       format: format.simple(),
-    }),
-    new transports.File({
-      filename: path.resolve(
-        __dirname,
-        "../../../content/logs/logchimp-error.log",
-      ),
-      level: "error",
-    }),
-    new transports.File({
-      filename: path.resolve(
-        __dirname,
-        "../../../content/logs/logchimp-all.log",
-      ),
-    }),
+    })
   ],
 });
 
