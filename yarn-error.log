@@ -1,0 +1,72 @@
+Arguments: 
+  /Users/tuanhoang/.nvm/versions/node/v16.17.0/bin/node /Users/tuanhoang/.yarn/bin/yarn.js
+
+PATH: 
+  /Users/tuanhoang/Desktop/Research/zksync-era/bin:/Users/tuanhoang/.krew/bin:/Users/tuanhoang/Library/pnpm:/opt/homebrew/opt/libpq/bin:/Users/tuanhoang/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/tuanhoang/.tiup/bin:/Users/tuanhoang/.yarn/bin:/Users/tuanhoang/.config/yarn/global/node_modules/.bin:/Users/tuanhoang/.nvm/versions/node/v16.17.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/tuanhoang/.cargo/bin:/Users/tuanhoang/go/bin:/Users/tuanhoang/hadoop/hadoop-3.3.1/bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.17.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@logchimp%2fapi: Not found
+      at Request.params.callback [as _callback] (/Users/tuanhoang/.yarn/lib/cli.js:66138:18)
+      at Request.self.callback (/Users/tuanhoang/.yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/Users/tuanhoang/.yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/Users/tuanhoang/.yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1358:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+  	"name": "logchimp",
+  	"description": "A open-source software to track your customers feedback",
+  	"version": "0.7.0-beta.2",
+  	"private": true,
+  	"repository": {
+  		"type": "git",
+  		"url": "https://github.com/logchimp/logchimp.git"
+  	},
+  	"bugs": {
+  		"url": "https://github.com/logchimp/logchimp/issues"
+  	},
+  	"scripts": {
+  		"server:dev": "pnpm --filter @logchimp/api dev",
+  		"server:start": "pnpm --filter @logchimp/api start",
+  		"start": "pnpm --filter @logchimp/api start",
+  		"build:theme": "pnpm --filter @logchimp/theme build",
+  		"rome:format": "rome format --write ."
+  	},
+  	"dependencies": {
+  		"@logchimp/api": "0.7.0-beta.2",
+  		"dotenv": "16.0.3"
+  	},
+  	"devDependencies": {
+  		"nodemon": "2.0.22",
+  		"rome": "11.0.0"
+  	},
+  	"keywords": [
+  		"logchimp",
+  		"feedback",
+  		"open-source",
+  		"codecarrot"
+  	],
+  	"engines": {
+  		"node": ">=16 < 17"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
