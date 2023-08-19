@@ -6,7 +6,7 @@
     },
     {
       "source": "/api/:path*",
-      "destination": "https://roadmap.depocket.com/api/:path*"
+      "destination": "https://roadmap-serverless.onrender.com/api/:path*"
     }
   ]
 }
